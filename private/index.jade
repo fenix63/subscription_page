@@ -10,46 +10,93 @@ html
 
         
 body
-    .container.topmenu
-        .row
-            .col-lg-9.col-lg-offset-1
-                ul
-                    li
-                        a(href="#")
-                            |Обо мне
-                    li
-                        a(href="#")
-                            |Like Holding
-                    li
-                        a(href="#")
-                            |Полезное
-                    li
-                        a(href="#")
-                            |Мероприятия
-                    li
-                        a(href="")
-                            |Пресс-центр
-                    li
-                        a(href="")
-                            |Хорошие люди
-                    li
-                        a(href="")
-                            |Самое важное
-        .row
-            .col-lg-9.col-lg-offset-1.main
-                .row
-                    .col-lg-9.col-lg-offset-1
-                        h1
-                            |Василий Голубков
-                .row.desc
-                    .col-lg-9.col-lg-offset-1
-                        |Путешествую, снимаю видео, пишу тексты. Делаю бизнес. Иногда получается.<br/><br/>
-                        |Иногда, мне приходит умная мысль, и я ею делюсь. Если не приходит, не делюсь. Поэтому, если хочется получать умные мысли
+    .container.content
+        .row.top_menu
+            .col-lg-2.col-lg-offset-0.col-md-2.col-md-offset-2.col-sm-2.col-sm-offset-2
+                .icon
+                    a(href="#")
+                        img(src="images/logo_nasa.png", alt="")
+            .col-lg-9.col-lg-offset-0.col-md-5.col-md-offset-0.col-sm-5.col-sm-offset-0
+                h1
+                    |Запишись на бесплатный курс Трио Гармония, и узнай, как найти любимой дело в жизни, при этом сохранить и укрепить отношения и оставаться здоровым
 
-                .row.buttons
-                    .col-lg-4.col-lg-offset-2
-                        button
-                            |e-mail
-                    .col-lg-4
-                        button(class="rassylka")
-                            |Подписаться на рассылку
+
+        .row.lead_magnit
+            video(autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop)
+                source(src="//demosthenes.info/assets/videos/polina.webm" type="video/webm")
+                source(src="//demosthenes.info/assets/videos/polina.mp4" type="video/mp4")
+            
+            #polina
+                h1
+                    |Polina
+                p
+                    |filmed by Alexander Wagner 2011
+                p
+                    a(href="//demosthenes.info/blog/777/Create-Fullscreen-HTML5-Page-Background-Video")
+                        |original article
+                p
+                    |Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo.
+                button
+                    |Pause
+            
+
+            .col-lg-5.form_z
+                form(action="" role="form")
+                    h2
+                        |Подписаться
+                    .form-group
+                        label(for="email")
+                            |email
+                        input(type="email" class="form-control" id="email" placeholder="Введите email")
+                    .form-group
+                        label(for="phone")
+                            |email
+                        input(type="phone" class="form-control" id="phone" placeholder="Введите ваш телефон")
+                    .form-group
+                        .col-lg-12.col-lg-offset-0
+                            button(type="submit" class="btn btn-success")
+                                |Отправить заявку
+            //- .col-lg-6.col-lg-offset-0
+            //-     iframe(src="https://www.youtube.com/embed/bFqf15BNgHc", frameborder="0" allowfullscreen)
+        .row.videos
+            .col-lg-3
+                iframe(src="https://www.youtube.com/embed/bFqf15BNgHc", frameborder="0" allowfullscreen)
+            .col-lg-3
+                iframe(src="https://www.youtube.com/embed/bFqf15BNgHc", frameborder="0" allowfullscreen)
+            .col-lg-3
+                iframe(src="https://www.youtube.com/embed/bFqf15BNgHc", frameborder="0" allowfullscreen)
+            .col-lg-3
+                iframe(src="https://www.youtube.com/embed/bFqf15BNgHc", frameborder="0" allowfullscreen)
+        //- .row.benefits
+        //-     .col-lg-4
+        //-         img(src="images/banner.png", alt="")
+        //-     .col-lg-8
+        //-         .row
+        //-             .col-lg-10.col-lg-offset-2
+        //-                 h1
+        //-                     |Выгода 1
+        //-                 p
+        //-                     |Первый параграф текста
+        //-                 p
+        //-                     |Второй параграф текста
+        //-             .col-lg-12.col-lg-offset-2
+        //-                 h1
+        //-                     |Выгода 2
+        //-                 p
+        //-                     |Первый параграф текста
+        //-                 p
+        //-                     |Второй параграф текста
+        //-             .col-lg-12.col-lg-offset-2
+        //-                 h1
+        //-                     |Выгода 3
+        //-                 p
+        //-                     |Первый параграф текста
+        //-                 p
+        //-                     |Второй параграф текста
+        //-             .col-lg-12.col-lg-offset-2
+        //-                 h1
+        //-                     |Выгода 4
+        //-                 p
+        //-                     |Первый параграф текста
+        //-                 p
+        //-                     |Второй параграф текста
